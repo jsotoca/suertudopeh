@@ -1,0 +1,16 @@
+ion-title {
+    font-family: 'Poppins Regular';
+}
+
+ion-segment {
+    --background:var(--ion-color-primary);
+}
+
+ion-segment-button {
+    --color-checked: var(--ion-color-secondary);
+    --color: var(--ion-color-light);
+    font-family: "Poppins Regular"; 
+    // font-size: 17px;
+    // font-weight: 600;
+    // line-height: 23px;
+}

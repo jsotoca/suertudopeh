@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Elegir tus números</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-label class="entrada">{{texto}}</ion-label>
+    <ion-button *ngIf="jugada.length == 6"  class="btnGuardar" color="tertiary" fill="outline" expand="block" (click)="saveJugada()">
+      <ion-label>Guardar Jugada</ion-label>
+      <ion-icon name="bookmark-outline" slot="end"></ion-icon>
+    </ion-button>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col *ngFor="let opcion of tablero"  size="2">
+          <ion-button class="opcion-numero" (click)="selectNumber(opcion.number)" [color]="opcion.status? 'tertiary':'primary'">
+            {{opcion.number}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

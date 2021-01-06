@@ -1,0 +1,13 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title color="secondary">{{site | uppercase}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="navegateTo('tinka')">
+        <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="navegateTo('favorites')">
+        <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

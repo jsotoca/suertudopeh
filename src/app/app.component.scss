@@ -1,0 +1,16 @@
+@import '../theme/fonts/poppins.scss';
+
+ion-tab-button {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-light);
+    --color-selected: var(--ion-color-secondary);
+    font-family: 'Poppins Regular';
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+// .tabs {
+//     font-family: 'Poppins Regular';
+//     font-size: 14px !important;
+//     font-weight: 400;
+// }

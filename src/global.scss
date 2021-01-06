@@ -24,3 +24,41 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-content {
+    --ion-background-color:#ecf0f1;
+}
+
+ion-card {
+    --background: var(--ion-color-light);
+    font-family: 'Poppins Regular';
+}
+
+.opcion {
+    font-family: 'Poppins Regular';
+}
+
+.entrada {
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    background-color: #3CBC8D;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.btnGuardar {
+    margin-top: 9px !important;
+}
+
+.eliminar {
+    color: var(--ion-color-danger) !important;
+}
+
+.cancelar {
+    color: var(--ion-color-primary) !important;
+}

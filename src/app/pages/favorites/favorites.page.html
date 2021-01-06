@@ -1,0 +1,36 @@
+<app-header site="Mis Jugadas"></app-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12"> 
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Ten mucha suerte 😊</ion-card-subtitle>
+            <ion-card-title>Mis jugadas Favoritas</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-list-header>
+                <ion-label>Mis Jugadas</ion-label>
+                <ion-button>Total: {{this.storage.jugadas.length}}</ion-button>
+              </ion-list-header>
+              <ion-item *ngFor="let jugada of this.storage.jugadas" >
+                <ion-thumbnail slot="start">
+                  <img src="../../../assets/img/{{jugada.site}}.png">
+                </ion-thumbnail>
+                <ion-label class="text">
+                  <h2>{{jugada.numbers.join(', ')}}</h2>
+                  <p>{{jugada.date | date:'medium'}}</p>
+                </ion-label>
+                <ion-button color="danger" fill="clear" slot="end" (click)="deleteData(jugada.uuid)">
+                  <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

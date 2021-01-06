@@ -1,5 +1,7 @@
 {
   "name": "suertudope",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Jugada al azar</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-label class="entrada">{{jugada}}</ion-label>
+    <ion-button class="btnGuardar" (click)="goodLuck()" color="danger" fill="outline" expand="block">
+      <ion-label>Generar Jugada</ion-label>
+      <ion-icon name="heart" slot="end"></ion-icon>
+    </ion-button>
+    <ion-button *ngIf="jugar"  class="btnGuardar" color="tertiary" fill="outline" expand="block" (click)="saveJugada()">
+      <ion-label>Guardar Jugada</ion-label>
+      <ion-icon name="bookmark-outline" slot="end"></ion-icon>
+    </ion-button>
+  </ion-card-content>
+</ion-card>
